@@ -6,3 +6,7 @@
 body {
   color: #999;
 }
+
+.hidden {
+  display: none;
+}
