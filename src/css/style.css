@@ -4,9 +4,146 @@
   }
 
 body {
-  color: #999;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #363333;
+  background-color: #d6d6d6;
 }
 
-.hidden {
-  display: none;
+.widget {
+  position: relative;
+  margin: 40px auto;
+  padding: 20px;
+  width: 650px;
+  background-color: #ffffff;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #363333;
+  border-radius: 15px;
+}
+
+.btn:hover, .small-btn:hover, .ticket-status-border:hover {
+  background-color: #1f3d2233;
+  cursor: pointer;
+}
+
+.form-title {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.ticket-list {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px 8px;
+  border: 1px solid #363333;
+  border-collapse: collapse;
+}
+
+.ticket-element {
+  border-top: 1px solid #363333;
+}
+
+td {
+  padding: 12px;
+  vertical-align: top;
+}
+
+.ticket-status {
+  box-sizing: border-box;
+  width: 35px;
+}
+
+.ticket-status-border {
+  text-align: center;
+}
+
+.ticket-status-border, .small-btn {
+  font-size: inherit;
+  width: 30px;
+  height: 30px;
+  color: #363333;
+  border: 1px solid #363333;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.ticket-name {
+  width: 50%;
+  cursor: pointer;
+}
+
+.ticket-description {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.ticket-btns-container {
+  display: flex;
+  width: 65px;
+  justify-content: space-between;
+}
+
+.form-container {
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  width: 80%;
+  z-index: 1000;
+}
+
+.form {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #363333;
+  border-radius: 15px;
+}
+
+.form-title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: block;
+  width: 95%;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: inherit;
+  font-family: inherit;
+  border: 1px solid #363333;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.form-btn {
+  margin-right: 15px;
+}
+
+.save-btn {
+  width: 65px;
+}
+
+.cancel-btn {
+  width: 100px;
 }

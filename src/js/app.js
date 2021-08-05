@@ -1,16 +1,12 @@
-const xhr = new XMLHttpRequest();
+import Widget from './Widget';
+import TicketList from './TicketList';
+import ModalForm from './ModalForm';
 
-xhr.open('GET', 'https://http-helpdesk.herokuapp.com/');
+const formContainer = document.querySelectorAll('.form-container');
+const modalForm = new ModalForm(formContainer);
 
-xhr.addEventListener('load', () => {
-  if (xhr.status >= 200 && xhr.status < 300) {
-    try {
-      const data = JSON.parse(xhr.responseText);
-      console.log(data);
-    } catch (e) {
-      console.error(e);
-    }
-  }
-});
+const ticketListContainer = document.querySelector('.ticket-list-container');
+const ticketList = new TicketList(ticketListContainer);
 
-xhr.send();
+const widget = new Widget(modalForm, ticketList);
+widget.start();
