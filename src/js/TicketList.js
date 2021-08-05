@@ -16,7 +16,7 @@ export default class TicketList {
 
     tickets.forEach((o) => {
       const ticketStatus = o.status === 'true' ? String.fromCharCode(0x2713) : '';
-      const date = `${o.created.substring(0, 10)} ${o.created.substring(11, 17)}`;
+      const date = `${o.created.substring(0, 10)} ${o.created.substring(11, 16)}`;
 
       const ticketEl = document.createElement('tr');
       ticketEl.className = 'ticket-element';
